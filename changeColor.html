@@ -8,13 +8,20 @@
   <title>Angular.js Practice</title>
   <script src="js/angular.min.js"></script>
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    #testDiv {
+      height: 100px;
+      width: 100px;
+      border: 1px solid #000;
+    }
+  </style>
 </head>
 
 <body>
-  <div ng-app="" ng-init="myCol='lightblue'">
-
-    <input style="background-color:{{myCol}}" ng-model="myCol" value="{{myCol}}">
-
+  <div ng-app="" ng-init="bgColor='lightblue'">
+    Enter name of color or hex code:
+    <input ng-model="bgColor" value="{{bgColor}}">
+    <div id="testDiv" style="background-color:{{bgColor}}"></div>
   </div>
 </body>
 
