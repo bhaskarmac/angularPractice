@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular.js Practice</title>
+  <script src="js/angular.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div ng-app="myApplication" this-is-my-directive></div>
+
+  <script>
+    var appInstance = angular.module("myApplication", []);
+    console.log('appInstance=>', appInstance);
+
+    appInstance.directive("thisIsMyDirective", function () {
+      return {
+        template: "This text is created using directive constructor"
+      };
+    });
+  </script>
+</body>
+
+</html>
