@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular.js Practice</title>
+  <script src="js/angular.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div ng-app="" ng-init="names=[{name: 'max', country: 'India'}, {name: 'sam', country: 'US'}, {name: 'peter', country: 'Australia'}]">
+
+    <ul>
+      <li ng-repeat="i in names">
+        {{i.name}} from {{i.country}}
+      </li>
+    </ul>
+
+  </div>
+
+
+
+</body>
+
+</html>
