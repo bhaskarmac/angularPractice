@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular.js Practice</title>
+  <script src="js/angular.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h1>Email validation using directive</h1> <br>
+
+  <form ng-app="" name="testForm">
+    Email <input type="email" name="txtEmail" ng-model="text">
+    <span ng-show="testForm.txtEmail.$error.email" style="color:red;">Enter valid email address!</span>
+  </form>
+  
+</body>
+
+</html>
