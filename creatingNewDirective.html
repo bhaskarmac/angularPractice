@@ -12,7 +12,24 @@
 
 <body ng-app="creatingNewDirective">
 
+  Invoking directive by element name:
   <this-is-new-directive></this-is-new-directive>
+  <br><br>
+
+  Invoking directive by attribute:
+  <div this-is-new-directive></div>
+  <br><br>
+
+  Invoking directive by class:
+  <div class="this-is-new-directive"></div>
+  <p><strong>Note:</strong> You must add the value "C" to the restrict property to be able to invoke the directive from a class name.</p>
+  <br><br>
+
+  Invoking directive by comment:
+  <!-- directive: this-is-new-directive  -->
+  <p><strong>Note:</strong> You must add the <strong>replace</strong> property in this example, otherwise the comment would be invisible.</p>
+
+  <p><strong>Note:</strong> You must add the value "M" to the <strong>restrict</strong> property to be able to invoke the directive from a comment.</p>
 
   <script>
     var app = angular.module("creatingNewDirective", []);
