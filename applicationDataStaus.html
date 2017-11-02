@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular.js Practice</title>
+  <script src="js/angular.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h1>Application data status</h1> <br>
+
+  <form ng-app="" name="testForm" ng-init="txtEmail='test@demo.com'">
+    Email <input type="email" name="txtEmail" ng-model="txtEmail">
+    <br><br>
+    valid {{testForm.txtEmail.$valid}} <br>
+    dirty {{testForm.txtEmail.$dirty}} <br>
+    touched {{testForm.txtEmail.$touched}} <br>
+  </form>
+  
+</body>
+
+</html>
