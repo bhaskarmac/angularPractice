@@ -35,6 +35,8 @@
     var app = angular.module("creatingNewDirective", []);
     app.directive("thisIsNewDirective", function(){
       return {
+        restrict: "ECAM",
+        replace: true,
         template: "<h1>This is brand new directive created using custom directive!</h1>"
       };
     });
